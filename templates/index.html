@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure File Exchange</title>
+</head>
+<body>
+    <h1>Secure File Exchange</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" name="file" id="file" required>
+        <br><br>
+        <label for="user">Select User:</label>
+        <select name="user" id="user">
+            <option value="user1">User 1</option>
+            <option value="user2">User 2</option>
+        </select>
+        <br><br>
+        <button type="submit" name="action" value="encrypt">Encrypt File</button>
+        <button type="submit" name="action" value="decrypt">Decrypt File</button>
+    </form>
+</body>
+</html>
